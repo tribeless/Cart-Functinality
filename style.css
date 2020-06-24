@@ -1,0 +1,151 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color:whitesmoke;
+    text-align: center;
+}
+
+/* header section */
+#landing-page{
+    background-color:#444;
+    padding:2rem;
+
+}
+.header{
+    padding:0 3rem;
+    
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items:center;
+    
+}
+.brand a{
+    color:black;
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+.nav-link a{
+    text-decoration: none;
+    color:#fafafa;
+    font-size: 1.5rem;
+    margin-right:1rem;
+    text-transform: uppercase;
+
+}
+
+/* Products section */
+#products-section{
+    padding: 4rem 2rem;
+    background-color: #fafafa;
+}
+.shop-contents{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px ,1fr));
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    
+    /* display: flex;
+    flex:1 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+
+}
+.contents img{
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.contents h5{
+    margin-top:2rem;
+    font-size: 2rem;
+    margin: 1.5rem;
+    
+}
+ .product-price,.cart-btn{
+    margin-top: 2rem;
+}
+.product-price{
+    float: left;
+    
+}
+.cart-btn{
+    float: right;
+    text-transform: uppercase;
+    background-color: rgb(13, 129, 224);
+    border: none;
+    padding:.5rem;
+    font-size: .8rem;
+    color:whitesmoke;
+    border-radius: 5px;
+    
+}
+
+/* 
+Cart section */
+
+.big-heading{
+    color:rgb(15, 92, 235);
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+.product-heading span{
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.title{
+float: left;
+
+}
+.quantity{
+text-align: center;
+}
+.price{
+float: right;
+}
+.product-cart-menu{
+    display: flex;
+    align-items: center;
+    
+}
+.item-image img{
+    height: 50px;
+    width:50px;
+    margin-right: .5rem;
+    
+}
+.product-cart-menu input[type="number"]{
+    width: 50px;
+    text-align: center;
+    margin-left: 110px;
+
+}
+ .item-price{
+    margin-left: 110px;
+    margin-right:.5rem;
+}
+.remove-btn{
+    border-radius: 5px;
+    border: none;
+    padding: .5rem;
+    background-color: chocolate;
+}
+
+/* Footer */
+footer{
+    padding: 20px;
+    text-align:center;
+    background-color: #333;
+    color: whitesmoke;
+}
